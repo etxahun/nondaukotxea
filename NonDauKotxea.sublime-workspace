@@ -1,0 +1,970 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"map",
+				"maps"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"margin-",
+				"margin-top"
+			],
+			[
+				"getLocation",
+				"getLocationSeguimiento"
+			],
+			[
+				"text",
+				"text"
+			],
+			[
+				"es",
+				"escritura_tabla"
+			],
+			[
+				"op",
+				"option	Tag"
+			],
+			[
+				"bor",
+				"border-left"
+			],
+			[
+				"init",
+				"initialize"
+			],
+			[
+				"in",
+				"initialize_map"
+			],
+			[
+				"line",
+				"lineCoordinates"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"load",
+				"loadMap"
+			],
+			[
+				"edi",
+				"edificio"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"locations",
+				"locations_arr"
+			],
+			[
+				"error",
+				"error_reporting"
+			],
+			[
+				"point",
+				"pointDistances"
+			],
+			[
+				"edif",
+				"edifAcoords"
+			],
+			[
+				"basurto",
+				"basurtoOverlay"
+			],
+			[
+				"edifB",
+				"edifBcoords"
+			],
+			[
+				"conte",
+				"contentString"
+			],
+			[
+				"conen",
+				"contentString"
+			],
+			[
+				"marg",
+				"margin-top"
+			],
+			[
+				"animate",
+				"animateCircle"
+			],
+			[
+				"paddin",
+				"padding-left"
+			],
+			[
+				"selec",
+				"selectpicker"
+			],
+			[
+				"he",
+				"height"
+			],
+			[
+				"mar",
+				"margin-bottom"
+			],
+			[
+				"parada",
+				"datos_parada"
+			],
+			[
+				"dao",
+				"datos_lineas"
+			],
+			[
+				"Denomin",
+				"DenominacionLinea"
+			],
+			[
+				"json",
+				"json_encode"
+			],
+			[
+				"datos",
+				"datos_lineas"
+			],
+			[
+				"ht",
+				"html2"
+			],
+			[
+				"input",
+				"input_municipio"
+			],
+			[
+				"strto",
+				"strtoupper"
+			],
+			[
+				"str",
+				"strcmp"
+			],
+			[
+				"for",
+				"for	for …"
+			],
+			[
+				"Descrip",
+				"DescripcionGrupo"
+			],
+			[
+				"Desc",
+				"Descripción"
+			],
+			[
+				"print",
+				"print_r"
+			],
+			[
+				"tempma",
+				"tempmaxK"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"bo",
+				"bootstrap.js"
+			],
+			[
+				"li",
+				"link	Tag"
+			],
+			[
+				"j",
+				"jQuery.getJSON	jQuery.getJSON"
+			],
+			[
+				"backgr",
+				"background-color"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 18396,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "nondago.html",
+			"settings":
+			{
+				"buffer_size": 11399,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 27.0,
+		"selected_items":
+		[
+			[
+				"form",
+				"Snippet: bs3-form"
+			],
+			[
+				"bs lab",
+				"Snippet: bs3-label"
+			],
+			[
+				"bs",
+				"Snippet: bs3-select"
+			],
+			[
+				"fet",
+				"Fetch: File"
+			],
+			[
+				"bs3nav",
+				"Snippet: bs3-navbar-fixed-top"
+			],
+			[
+				"nuevo",
+				"Snippet: NuevoProyectoBootstrap3"
+			],
+			[
+				"bs3for",
+				"Snippet: bs3-form-horizontal"
+			],
+			[
+				"bs3table",
+				"Snippet: bs3-table-bordered"
+			],
+			[
+				"bs3 table",
+				"Snippet: bs3-table-bordered"
+			],
+			[
+				"bs3 tb",
+				"Snippet: bs3-table"
+			],
+			[
+				"bs3",
+				"Snippet: bs3-table"
+			],
+			[
+				"Fet",
+				"Fetch: File"
+			],
+			[
+				"Fetc",
+				"Fetch: Package"
+			],
+			[
+				"p",
+				"Package Control: Install Package"
+			],
+			[
+				"proy",
+				"Snippet: NuevoProyectoBootstrap3"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Nu",
+				"Snippet: NuevoProyectoBootstrap3"
+			],
+			[
+				"bootstr",
+				"Snippet: Bootstrap danger button"
+			],
+			[
+				"Bootstr",
+				"Snippet: Bootstrap starter"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"Snippet: bootstra",
+				"Snippet: Bootstrap starter"
+			],
+			[
+				"pa",
+				"Package Control: Install Package"
+			],
+			[
+				"pac",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"Snippet: bs3-navbar-form"
+			],
+			[
+				"Pac",
+				"Package Control: Install Package"
+			],
+			[
+				"Packa",
+				"Package Control: List Packages"
+			],
+			[
+				"P",
+				"Package Control: List Packages"
+			],
+			[
+				"Pack",
+				"Package Control: Install Package"
+			],
+			[
+				"Pa",
+				"Package Control: Install Package"
+			],
+			[
+				"php",
+				"Format: Php"
+			],
+			[
+				"jquer",
+				"Snippet: jQuery.ajax"
+			],
+			[
+				"jq",
+				"Set Syntax: jQuery (JavaScript)"
+			],
+			[
+				"j",
+				"Set Syntax: JSON"
+			],
+			[
+				"Snippet: ",
+				"Snippet: Lorem ipsum"
+			],
+			[
+				"cle",
+				"CleanCSS: Clean current file"
+			]
+		],
+		"width": 521.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Applications/MAMP/htdocs/android4mysql/db_config.php",
+		"/Users/esb/Desktop/fingerprintjs-master/README.md",
+		"/Applications/MAMP/htdocs/geolocnextelbsjordi_dataentry/Bootstrap_backup_original/README.md",
+		"/Applications/MAMP/htdocs/nondaukotxea/index.html",
+		"/Applications/MAMP/htdocs/nondaukotxea/nondago.html",
+		"/Applications/MAMP/htdocs/geolocnextelbs/ZZZ-VERSIONES_ANTERIORES/v1_posicion_objeto(lat,long)_y_Muestra_Edificios_A_y_B/index.html",
+		"/Applications/MAMP/htdocs/geolocnextelbs/ZZZ-VERSIONES_ANTERIORES/v1_posicion_objeto(lat,long)_y_Muestra_Edificios_A_y_B/index.html.bak_con_edificios_A_y_B",
+		"/Applications/MAMP/htdocs/geolocnextelbs/ZZZ-VERSIONES_ANTERIORES/v1_posicion_objeto(lat,long)_y_Muestra_Edificios_A_y_B/locations.html.bak_lectura_add_del_de_BBDD_sencilla",
+		"/Applications/MAMP/htdocs/geolocnextelbs/backup_original/bootstrap-elements.html",
+		"/Applications/MAMP/htdocs/geolocnextelbs/posicion3.php",
+		"/Applications/MAMP/htdocs/geolocnextelbs/posicion2.php",
+		"/Applications/MAMP/htdocs/geolocnextelbs/posicion.php",
+		"/Applications/MAMP/htdocs/geolocnextelbs/index.html.bak_con_edificios_A_y_B",
+		"/Applications/MAMP/htdocs/geolocnextelbs/index.html",
+		"/Applications/MAMP/htdocs/geolocnextel/muestramarkers.php",
+		"/Applications/MAMP/htdocs/geolocnextel/insertaposicion.php",
+		"/Applications/MAMP/htdocs/geolocnextel/index5.html",
+		"/Applications/MAMP/htdocs/geolocnextel/index4.html",
+		"/Applications/MAMP/htdocs/geolocnextel/index3.html",
+		"/Applications/MAMP/htdocs/geolocnextel/index2.html",
+		"/Applications/MAMP/htdocs/geolocnextel/consultamarcadores.php",
+		"/Applications/MAMP/htdocs/geolocnextel/index.html",
+		"/Applications/MAMP/htdocs/geolocation/map.html",
+		"/Applications/MAMP/htdocs/geolocation/css/style.css",
+		"/Applications/MAMP/htdocs/geolocation/aurelio.html",
+		"/Applications/MAMP/htdocs/geolocation/positions.html",
+		"/Applications/MAMP/htdocs/geolocation/index.html",
+		"/Users/esb/Desktop/partners.php",
+		"/Applications/MAMP/htdocs/bizkaibus/realiza_busqueda_lineas_municipio.php",
+		"/Applications/MAMP/htdocs/hamabide11/historicos.php",
+		"/Applications/MAMP/htdocs/parseaxml/index copia.php",
+		"/Applications/MAMP/htdocs/bizkaibus/index.php",
+		"/Applications/MAMP/htdocs/parseaxml/realiza_busqueda_cadenas.php",
+		"/Applications/MAMP/htdocs/parseaxml/index.php",
+		"/Applications/MAMP/htdocs/parseaxml/prueba.php",
+		"/Applications/MAMP/htdocs/parseaxml/Series.xml",
+		"/Applications/MAMP/htdocs/domonesb/index.php",
+		"/Applications/MAMP/htdocs/grafika/index.php",
+		"/Applications/MAMP/htdocs/maletaboda/index.html",
+		"/Applications/MAMP/htdocs/grafika/js/jquery.js",
+		"/Applications/MAMP/htdocs/bizkaibus/prueba.php",
+		"/Applications/MAMP/htdocs/bizkaibus/index3.php",
+		"/Applications/MAMP/htdocs/bizkaibus/realiza_busqueda_paso_parada.php",
+		"/Applications/MAMP/htdocs/gcharts/index.php",
+		"/Applications/MAMP/htdocs/gcharts/lib.php",
+		"/Applications/MAMP/htdocs/bizkaibus/index(buena).php",
+		"/Applications/MAMP/htdocs/hamabide11/altas.php",
+		"/Applications/MAMP/htdocs/bizkaibus/foro_nutricionistas/js/main.js",
+		"/Applications/MAMP/htdocs/bizkaibus/foro_nutricionistas/index.html",
+		"/Applications/MAMP/htdocs/bizkaibus/foro_nutricionistas/users.php",
+		"/Applications/MAMP/htdocs/bizkaibus/realiza_busqueda_municipio.php",
+		"/Applications/MAMP/htdocs/hamabide11/realiza_busqueda_historicos.php",
+		"/Applications/MAMP/htdocs/bizkaibus/realiza_busqueda.php",
+		"/Users/esb/Library/Application Support/Sublime Text 2/Packages/User/Fetch.sublime-settings",
+		"/Applications/MAMP/htdocs/bizkaibus/js/jquery.js",
+		"/Applications/MAMP/htdocs/pruebagcharts/index.html",
+		"/Applications/MAMP/htdocs/maletaboda/showmaletanerea.php",
+		"/Applications/MAMP/htdocs/maletaboda/showmaletaetxahun.php",
+		"/Applications/MAMP/htdocs/maletaboda/showpendientes.php",
+		"/Applications/MAMP/htdocs/maletaboda/showneceser.php",
+		"/Applications/MAMP/htdocs/json/index.php",
+		"/Applications/MAMP/htdocs/bizkaibus/index.html",
+		"/Applications/MAMP/htdocs/hamabide11/modificar_paciente.php",
+		"/Applications/MAMP/htdocs/maletaboda/save.php",
+		"/Applications/MAMP/htdocs/hamabide11/listarevolutivos.php",
+		"/Applications/MAMP/htdocs/hamabide11/conexion.php",
+		"/Applications/MAMP/htdocs/hamabide11/login/include/constants.php",
+		"/Applications/MAMP/htdocs/maletaboda/post.php",
+		"/Applications/MAMP/htdocs/maletaboda/index3.html",
+		"/Applications/MAMP/htdocs/hamabide11/evolutivos.php",
+		"/Applications/MAMP/htdocs/hamabide11/index.php",
+		"/Applications/MAMP/htdocs/hamabide11/search.php",
+		"/Applications/MAMP/htdocs/hamabide11/.htaccess",
+		"/Users/esb/Library/Application Support/Sublime Text 2/Packages/SideBarEnhancements/messages/11.13.2012.1305.0.txt",
+		"/Applications/MAMP/htdocs/hamabide11/css/style.css",
+		"/Applications/MAMP/htdocs/hamabide11/bootstrap/css/signin.css",
+		"/Applications/MAMP/htdocs/domonesb/index.html",
+		"/Users/esb/Library/Application Support/Sublime Text 2/Packages/User/NuevoProyectoBootstrap3.sublime-snippet",
+		"/Applications/MAMP/htdocs/domonesb/js/jquery.js",
+		"/Applications/MAMP/htdocs/domonesb/starter-template.css",
+		"/Users/esb/Library/Application Support/Sublime Text 2/Packages/Emmet/Emmet.sublime-settings",
+		"/Users/esb/Desktop/LmGzeTAp.html",
+		"/Users/esb/Desktop/prueba.css",
+		"/Users/esb/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"showError",
+			"alert",
+			"php",
+			"url",
+			"clear_track_values",
+			"url",
+			"escritura",
+			"alert",
+			"escritura",
+			"user_id",
+			"demo",
+			"select",
+			"fa",
+			"map",
+			"current",
+			"Bordered Table",
+			"width",
+			"has been",
+			"The path has been",
+			"lineCoordinates",
+			"start_simulation_button",
+			"clear_path",
+			"Mapa",
+			"draw_path",
+			"center",
+			"store_path",
+			"Acions",
+			"Actions",
+			"muestraEdificioB",
+			"Forms",
+			"edif",
+			"eventos",
+			"Las coordenadas",
+			"marker",
+			"edifB",
+			"edifA",
+			"edifB",
+			"edifA",
+			"watchposition",
+			"<!",
+			"container",
+			"fillComboBox",
+			"getUsersArray",
+			"setHiddenResultsContainer",
+			"tmp_results",
+			"page-section-nerea",
+			"30%",
+			"edit",
+			"txt_nerea_item",
+			"form-inline",
+			"margin-top",
+			"}",
+			"#user_edit{\n	background-color: blue;\nwidth: 40px; \n}"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"settings":
+					{
+						"buffer_size": 18396,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								14152,
+								14152
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"incomplete_sync": null,
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"remote_loading": false,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 5718.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "nondago.html",
+					"settings":
+					{
+						"buffer_size": 11399,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4475,
+								4475
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"incomplete_sync": null,
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"remote_loading": false,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 4113.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 100.0
+	},
+	"output.sftp":
+	{
+		"height": 0.0
+	},
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 307.0,
+	"status_bar_visible": true
+}

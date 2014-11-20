@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <link rel="shortcut icon" href="car_locator.ico">
+    <meta name="author" content="">
+
+    <title>Non Dau Kotxea</title>
+    
+    <style type="text/css">
+     
+    .side-nav {
+        font-size: 18px;
+    }
+
+
+    #map-outer {
+        height: 100%;
+        padding: 20px;
+        /*border: 2px solid #CCC;*/
+        margin-bottom: 20px;
+        background-color: #FFF;
+    }
+
+    #map-canvas {
+        height: 455px;
+    }
+
+    #gorde {
+        margin-left: 10%;
+        width: 200px;
+    }
+
+    .marker-label,
+    .marker-icon {
+        z-index: 99;
+        position: absolute;
+        display: block;
+        margin-top: -50px;
+        margin-left: -25px;
+        width: 50px;
+        height: 50px;
+        font-size: 30px !important;
+        text-align: center;
+        color: #FFFFFF;
+        white-space: nowrap;
+    }
+      
+    </style>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/sb-admin.css" rel="stylesheet">
+
+    <!-- Morris Charts CSS -->
+    <link href="css/plugins/morris.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <!-- Navigation -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="fa fa-car navbar-brand" style="font-size: 22px; font-weight: bold;" href="index.html"> Non Dau Kotxea</a>
+            </div>
+
+            <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav side-nav">
+                    <li class="active">
+                        <a style="font-weight: lighter;" href="index.html"><i class="fa fa-map-marker"></i> Aparkatutako Lekua</a>
+                    </li>
+                    <li>
+                        <a style="font-weight: lighter;" href="nondago.html"><i class="fa fa-fw fa-globe"></i> Nola heldu Kotxera</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </nav>
+
+        <div id="page-wrapper">
+
+            <div class="container-fluid">
+
+                <!-- Page Heading -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1 class="page-header">
+                            Mapa <small>Aparkatu dudan lekua</small>
+                        </h1>
+                        <ol class="breadcrumb">
+                            <li class="active">
+                                <i class="fa fa-map-marker"></i> Aparkatutako Lekua
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div id="debug" class="row"></div>
+
+                <div class="row">
+                    <div id="map-outer" class="col-md-12">
+                        <div class="form-group col-md-4">
+                            <div class="panel panel-primary">
+                                <div class="panel-heading">
+                                        <h3 class="panel-title">1) Kotxeko posizioa gorde</h3>
+                                </div>
+                                <div class="panel-body">
+                                        <p>Kotxeko posizioa gordetzeko hurrengo botoia sakatu:</p>
+                                        <button id="gorde" class="btn btn-lg btn-success" type="button">Posizioa Gorde</button>
+                                </div>
+                            </div>
+
+                            <div class="table-responsive">
+                                <table id="tracking_table" class="table table-bordered table-hover">
+                                    <tbody>
+                                        <tr class="active">
+                                            <td><b>User ID</b></td>
+                                            <td id="user_id"></td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td><b>Latitudea</td>
+                                            <td id="lat_data" class="valor_tabla"></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td><b>Longitudea</b></td>
+                                            <td id="lon_data" class="valor_tabla"></td>
+                                        </tr>
+
+                                        <tr>
+                                           <td><b>Lon/Lat Zehastasuna [m]</b></td>
+                                           <td id="lat_long_acc_data" class="valor_tabla"></td>
+                                        </tr>
+                                    
+                                        <tr>
+                                           <td><b>Altuera [m]</b></td>
+                                           <td id="altitude_data" class="valor_tabla"></td>
+                                        </tr>
+
+                                        <tr>
+                                           <td><b>Altueraren Zehastasuna [m]</b></td>
+                                           <td id="alt_acc_data" class="valor_tabla"></td>
+                                        </tr>
+
+                                            <tr>
+                                           <td><b>Norabidea [gradutan]</b></td>
+                                           <td id="heading_data" class="valor_tabla"></td>
+                                        </tr>
+
+                                        <tr>
+                                           <td><b>Abiadura [m/s]</b></td>
+                                           <td id="speed_data" class="valor_tabla"></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td><b>Eguna</b></td>
+                                            <td id="time_stamp" class="valor_tabla"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>                               
+                            </div>
+                        </div> <!-- Fin del form-group 3-->
+
+                        <div class="col-md-8">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">
+                                        <i class="fa fa-fw fa-globe"></i>
+                                            Mapa
+                                    </h3>
+                                </div>
+
+                                <div id="map-canvas" class="panel-body">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div><!-- /map-outer -->
+                </div> <!-- /row -->
+
+            </div>
+            <!-- /.container-fluid -->
+
+        </div>
+        <!-- /#page-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <!--<script src="js/jquery.js"></script>-->
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Morris Charts JavaScript -->
+    <!--
+    <script src="js/plugins/morris/raphael.min.js"></script>
+    <script src="js/plugins/morris/morris.min.js"></script>
+    <script src="js/plugins/morris/morris-data.js"></script>
+    -->  
+
+    <script src="assets/jquery/jquery-1.10.2.min.js"></script>
+    <!--<link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />-->
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/prettify/run_prettify.js"></script>
+    <link href="assets/bootstrap-dialog/css/bootstrap-dialog.min.css" rel="stylesheet" type="text/css" />
+    <script src="assets/bootstrap-dialog/js/bootstrap-dialog.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+    <script src="js/fingerprint.js"></script>
+    <script type="text/javascript">
+   
+    $(document).ready(function() {
+        
+        //Obtenemos el UserID del dispositivo:
+        showUserId();
+
+        //Obtenemos la posición actual:
+        getLocationKotxea();
+
+        //Detectamos que se hayan actualizado los datos LAT/LON en la tabla:
+        $("#gorde").click(function() { almacenaPosicionKotxea(); });
+        //$("#lat_data").change(function() { alert("Kaka"); });
+
+    });//Fin del $(document).ready.
+
+    var path = [];
+    var fingerprint;
+
+    function showUserId()
+    {
+        fingerprint = new Fingerprint().get();
+        $("#user_id").html("<i>"+fingerprint+"</i>");
+    }
+
+
+    function getLocationKotxea() 
+    {
+
+        if (navigator.geolocation) {    
+        var optionsWatch = 
+            {
+             enableHighAccuracy: true,
+             timeout: 10000,
+             maximumAge: 0
+            };
+
+        // Opcion con "watchPosition"         
+        watchID = navigator.geolocation.watchPosition(showPositionKotxea,showError,optionsWatch);
+    
+        // Opcion con "GeoLocation"
+        //navigator.geolocation.getCurrentPosition(showPositionKotxea,handleNoGeolocation,optionsWatch);
+
+        } else {
+            $("#debug").html("Geolocation is not supported in this browser.");
+        }      
+    }
+
+/*
+    function handleNoGeolocation(errorFlag) 
+    {
+        if (errorFlag) 
+            {
+                //var content = 'Error: The Geolocation service failed.';
+
+                var msg1 = "<div style=\"margin-left: 40px;\" class=\"col-md-10 alert alert-success\">Error: The Geolocation service failed.</div>"; 
+                $("#debug").html(msg1);
+            } 
+        else 
+            {
+                //var content = 'Error: Your browser doesn\'t support geolocation.';
+                var msg2 = "<div style=\"margin-left: 40px;\" class=\"col-md-10 alert alert-success\">Error: Your browser doesn\'t support geolocation.</div>"; 
+                $("#debug").html(msg2);
+            }
+
+        var options = {
+            map: map,
+            position: new google.maps.LatLng(60, 105),
+            content: content
+        };
+
+        var infowindow = new google.maps.InfoWindow(options);
+        map.setCenter(options.position);
+    }
+    */
+
+    function showPositionKotxea(position) 
+    {
+        var dt = new Date();
+        var lat_long_acc;
+        var alt;
+        var alt_acc;
+        var heading;
+        var speed;
+
+        //Guardamos en "path" la posición actual
+        var pos = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+        path.push(pos);
+        
+        //Para sacar todo el listado de coordenadas:
+        //$("#coordenadas").append(position.coords.latitude + "," + position.coords.longitude + "<br>");  
+
+        if(isNaN(position.coords.accuracy)) 
+            {
+             lat_long_acc = "N/A";
+            }
+        else
+            {
+             lat_long_acc = position.coords.accuracy;
+            }
+
+        if(isNaN(position.coords.altitude))
+            {
+             alt = "N/A";
+            }
+        else
+            {
+             alt = position.coords.altitude;
+            }
+            
+        if(isNaN(position.coords.altitudeAccuracy))
+            {
+             alt_acc = "N/A";
+            }
+        else
+            {
+             alt_acc = position.coords.altitudeAccuracy;
+            }
+
+        if(isNaN(position.coords.heading))
+            {
+             heading = "N/A";
+            }
+        else
+            {
+             heading = position.coords.heading;
+            }
+
+        if(isNaN(position.coords.speed))
+            {
+             speed = "N/A";
+            }
+        else
+            {
+             speed = position.coords.speed;
+            }
+
+        $("#lat_data").html(position.coords.latitude);
+        $("#lon_data").html(position.coords.longitude);
+        $("#lat_long_acc_data").html(lat_long_acc);
+        $("#altitude_data").html(alt);
+        $("#alt_acc_data").html(alt_acc);
+        $("#heading_data").html(heading);
+        $("#speed_data").html(speed);
+
+        var time = dt.getHours() + ":" + dt.getMinutes() + ":" + dt.getSeconds();
+        //var time2 = position.coords.timestamp;
+        
+        $("#time_stamp").html(time);
+
+        //almacenaPosicion(fingerprint,position.coords.latitude,position.coords.longitude);               
+
+        // Mostramos el mapa centrado en center: path[0]
+        //var coords = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+        var options = {
+                zoom: 17,
+                //center: coords,
+                center: path[0],
+                mapTypeControl: false,
+                disableDefaultUI: true,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+
+        var map = new google.maps.Map(document.getElementById("map-canvas"), options);
+
+    
+        var marker = new google.maps.Marker({
+            position: pos,
+            map: map,
+            //icon: 'images/car.png',
+            //icon: 'images/user-marker.png',
+            title: 'Hemen zaude!'
+        });
+
+        map.setCenter(pos);
+        //var msg = "<div style=\"margin-left: 40px;\" class=\"col-md-10 alert alert-info\">The tracking process has been stopped.</div>";
+        //$("#debug").html(msg);     
+    }
+
+    
+    function showError(error) {
+        //alert(watchID);
+        switch(error.code) 
+        {
+            case error.PERMISSION_DENIED:
+                var msg1 = "<div style=\"margin-left: 40px;\" class=\"col-md-10 alert alert-success\">User denied the request for Geolocation.</div>"; 
+                $("#debug").html(msg1);
+                break;
+
+            case error.POSITION_UNAVAILABLE:
+                var msg2 = "<div style=\"margin-left: 40px;\" class=\"col-md-10 alert alert-warning\">Location information is unavailable.</div>";
+                $("#debug").html(msg2);
+                break;
+
+            case error.TIMEOUT:
+                var msg3 = "<div style=\"margin-left: 40px;\" class=\"col-md-10 alert alert-warning\">The request to get user location timed out.</div>";
+                $("#debug").html(msg3);
+                break;
+
+            case error.UNKNOWN_ERROR:
+                var msg4 = "<div style=\"margin-left: 40px;\" class=\"col-md-10 alert alert-danger\">An unknown error ocurred.</div>";
+                $("#debug").html("msg4");
+                break;
+        }
+    }
+
+
+    function almacenaPosicionKotxea ()
+    { 
+        var user_sel = $("#user_id").text();
+        var latitude = $("#lat_data").text();
+        var longitude = $("#lon_data").text();
+
+        //Comprobamos que la tabla contenga al menos datos de la primera lectura. En ese caso, haremos la escritura en base de datos:
+        $.ajax({
+            //url: 'http://192.168.0.2/geolocnextelbsjordi_dataentry/store_path.php?action=add&user_id='+user_sel+'&latitude='+latitude+'&longitude='+longitude+'',
+            //url: 'http://194.30.4.210:9999/geoservCollector/rest/collector/',
+            url:'store_parking.php',
+            type: 'POST',
+            data: {
+                    action: "add",
+                    user_id: user_sel,
+                    poslat: latitude,
+                    poslong: longitude
+                  }, 
+            dataType: 'text',
+            //crossDomain: true,
+            success: function(data){            
+                
+                if(data = "NO_ERROR") 
+                    {
+                        console.log("Se ha almacenado la posición correctamente.");
+                        stopWatch();
+                        BootstrapDialog.show({
+                            size: BootstrapDialog.SIZE_LARGE,
+                            title: 'Nun Dau Kotxea',
+                            message: 'Kotxeko posizioa gordeta!',
+                            buttons: [{
+                                label: 'Close',
+                                action: function(dialogItself){
+                                    dialogItself.close();
+                                }
+                            }]
+                        });
+                    }  
+            },
+
+            error: function(xhr, textStatus, errorThrown) {
+                console.log('ajax loading error...');
+                return false;
+            }
+        });
+    }
+
+    function stopWatch() 
+    {
+        if (watchID != null) 
+            {
+                navigator.geolocation.clearWatch(watchID);
+                watchID = null;
+                
+                //Mostramos el siguiente mensaje cuando paremos el "Tracking":
+                //var msg = "<div style=\"margin-left: 40px;\" class=\"col-md-10 alert alert-info\">Kotxeko posizioa gordeta!</div>";
+                //$("#debug").html(msg);
+
+                //Borramos el Div donde mostramos los mensajes
+                setTimeout(function() { $("#debug").empty(); }, 3000);
+
+            }
+    }
+
+
+    </script>
+</body>
+
+</html>
